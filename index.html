@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here&now Online SHOP</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+        <img src="media/logo.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li id="btnCarrito">
+                        <input type="checkbox" id="btn-carrito">
+                        <label for="btn-carrito" class= "lab-carrito">🛒 Carrito </label>
+                    </li>
+                    <li id="htmlCarrito">🥡 No hay productos</li>
+                    <li id="htmlTotal">💸 $ 0</li>
+                    <li id="btnRegistro">
+                        <input type="checkbox" id="btn-registro">
+                        <label for="btn-registro" class= "lab-registro">🏃 Registrate </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="modal modalInvisible" id="modal">
+        <div class="contenedor2">
+            <div>
+                <header>Bienvenido a tu carrito</header>
+                <label id="cerrarModal">❌</label>
+            </div>
+                <div class="cont-carrito"> 
+                    <table class="tabla">
+                        <tbody id="tbodyCarrito">
+                        </tbody>
+                    </table>
+                </div>
+            <div class="btn-pagar">
+                <p class="totalPagar" id="totalPagar">a</p>
+                <button id="botonPagar">Pagar</button>
+            </div>
+        </div>
+    </div>
+    <div class="modalRegistro modalRegistroInvisible" id="modalRegistro">
+        <div class="contenedor3">
+            <div>
+                <header>Registrate acá</header>
+                <label id="cerrarModalRegistro">❌</label>
+            </div>
+                <div class="cont-registro">
+                    <form class="formulario">
+                        <p>Escribí tu nombre</p>
+                        <input type="text" class="inputRegistrate" id="registroNombre">
+                        <p>Mail</p>
+                        <input type="text" class="inputRegistrate" placeholder="ejemplo@mail.com" id="registroMail">
+                        <p class="centrarContenido">Guardad datos en localStorage o en sessionStorage</p>
+                        <p><button id="btnGuardarLocal">Guardar local</button>
+                        <button id="btnGuardarSesion">Guardar sesion</button></p><br>
+                        <p><button id="btnRecupLocal">Recup local</button>
+                        <button id="btnRecupSesion">Recup sesion</button></p><br>
+                        <button id="btnBorrarTodo">Borrar datos</button></p>
+                    </form>
+                </div>
+        </div>
+    </div>
+
+    
+    <div class="amiguito"></div>
+
+    <section>
+        <div class="container" id="contenedor">
+            
+
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="centrarContenido" id="pokemon">
+            <h1>Pokemon</h1>
+            <img src="media/queso.png" alt="" id = "imagenPokemon">
+        </div>
+       
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/objet_arrays.js"></script>
+    <script src="JS/dom.js"></script>
+    <script src="JS/event_function.js"></script>
+</body>
+</html>
+
